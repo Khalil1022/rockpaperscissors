@@ -7,8 +7,16 @@
 $("button").click(function(){
       $("#userChoice").text($("#input").val());
 
+var randomNumber= Math.random();
 
+
+if(randomNumber<.333){
+    $("#computerChoice").html("Rock"); 
+}
+  else if(randomNumber>.333){
+      $("#computerChoice").html("Paper");
+      
+  }
 
 });
 // DOCUMENT READY FUNCTION BELOW
-
